@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sueleyman.drinkcontrol.DrinkStation" >
+
+<FrameLayout
+
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:layout_weight="1.00">
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:id="@+id/map" tools:context=".DrinkStation"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+</FrameLayout>
+
+<Button
+android:id="@+id/verbrauch"
+style="@style/Widget.AppCompat.Button"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:backgroundTint="@color/colorPrimary"
+android:text="@string/h_utiger_verbrauch"
+android:textSize="18sp"
+android:theme="@android:style/Theme.Holo" />
+
+<Button
+android:id="@+id/week"
+style="@style/Widget.AppCompat.Button"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:backgroundTint="@color/colorPrimary"
+android:text="@string/wochenansicht"
+android:textSize="18sp"
+android:theme="@android:style/Theme.Holo" />
+
+<Button
+android:id="@+id/settings"
+style="@style/Widget.AppCompat.Button"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:backgroundTint="@color/colorPrimary"
+android:text="@string/einstellungen"
+android:textSize="18sp"
+android:theme="@android:style/Theme.Holo"
+    />
+
+<Button
+android:id="@+id/info"
+style="@style/Widget.AppCompat.Button"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:backgroundTint="@color/colorPrimary"
+android:text="@string/information"
+android:textSize="18sp"
+android:theme="@android:style/Theme.Holo" />
+
+<Button
+android:id="@+id/waterstation"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:backgroundTint="@android:color/holo_blue_light"
+android:text="@string/wasserstation"
+android:theme="@android:style/Theme.Holo" />
+
+
+    </LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sueleyman.drinkcontrol.MainActivity"
+    android:background="#ffffff"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:id="@+id/Content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.00">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="287dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20px"
+            app:srcCompat="@drawable/bottle_" />
+
+        <TextView
+            android:id="@+id/goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400px"
+            android:layout_marginTop="150px"
+            android:text="Glückwunsch Tagesziel erreicht"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/aktuellerVerbrauch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="500px"
+            android:layout_marginTop="250px"
+            android:text="0,0 L"
+            android:textAlignment="viewStart"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="addWater"
+            android:text="+"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/toGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="360px"
+            android:layout_marginTop="480px"
+            android:textSize="18sp"
+            android:text="bis zum Ziel noch:" />
+
+        <TextView
+            android:id="@+id/toGoalResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="660px"
+            android:layout_marginTop="480px"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="0,0 L" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/verbrauch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="@string/h_utiger_verbrauch"
+        android:theme="@android:style/Theme.Holo" />
+
+    <Button
+        android:id="@+id/week"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/wochenansicht"
+        android:textSize="18sp"
+        android:theme="@android:style/Theme.Holo" />
+
+    <Button
+        android:id="@+id/settings"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/einstellungen"
+        android:textSize="18sp"
+        android:theme="@android:style/Theme.Holo"
+        />
+
+    <Button
+        android:id="@+id/info"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/information"
+        android:textSize="18sp"
+        android:theme="@android:style/Theme.Holo"
+       />
+
+    <Button
+        android:id="@+id/waterstation"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/wasserstation"
+        android:textSize="18sp"
+        android:theme="@android:style/Theme.Holo"
+        />
+
+
+</LinearLayout>

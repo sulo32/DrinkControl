@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sueleyman.drinkcontrol.InfoActivity"
+    android:background="#ffffff"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:id="@+id/Content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.00">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25px"
+        android:layout_marginRight="25px"
+        android:text="Information über Flüssigkeitszunahme"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="241dp"
+        android:layout_marginLeft="25px"
+        android:layout_marginRight="25px"
+        android:scrollbars="vertical"
+        android:text='Unser wichtigstes Lebensmittel ist preiswert und kalorienfrei. In Deutschland kommt es fast überall in sehr guter Qualität aus dem Hahn. Trotzdem wird Wasser noch oft unterschätzt. "Wir achten zu wenig auf gesundes Trinkverhalten", sagt Dr. Michael Boschmann, leitender Arzt am Franz-Volhard-Centrum für Klinische Forschung an der Charité Universitätsmedizin Berlin.  Wer zwischen den Mahlzeiten Softdrinks konsumiere, führe dem Körper ständig Kalorien zu. "Folglich muss er nie an seine Reserven gehen", erklärt Boschmann. "Wer stattdessen Wasser trinkt, wird seltener übergewichtig." Mit einem Liter Wasser lassen sich im Vergleich zu Cola oder Limo mehr als 400 Kilokalorien sparen, sofern es sich nicht um Light-Produkte handelt.\nQuelle: http://www.apotheken-umschau.de'
+        android:textAlignment="viewStart"
+        android:textSize="18sp" />
+
+</LinearLayout>
+
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/verbrauch"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/h_utiger_verbrauch"
+        android:textSize="18sp"
+        android:theme="@android:style/Theme.Holo" />
+
+    <Button
+        android:id="@+id/week"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/wochenansicht"
+        android:textSize="18sp"
+        android:theme="@android:style/Theme.Holo" />
+
+    <Button
+        android:id="@+id/settings"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/einstellungen"
+        android:textSize="18sp"
+        android:theme="@android:style/Theme.Holo"
+        />
+
+    <Button
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="@string/information"
+        android:theme="@android:style/Theme.Holo" />
+
+    <Button
+        android:id="@+id/waterstation"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/wasserstation"
+        android:textSize="18sp"
+        android:theme="@android:style/Theme.Holo"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sueleyman.drinkcontrol.SettingsActivity"
+    android:background="#ffffff"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:id="@+id/Content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.00">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="75dp"
+            android:paddingRight="50dp"
+            android:paddingTop="25dp"
+            android:weightSum="1"
+            tools:ignore="RtlHardcoded,UselessParent">
+
+            <CheckBox
+                android:id="@+id/Uhr12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.12"
+                android:text="12:00 Uhr"
+                android:textSize="18sp"
+                app:buttonTint="@color/colorPrimaryDark" />
+
+            <CheckBox
+                android:id="@+id/Uhr15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.12"
+                android:background="?attr/colorControlHighlight"
+                android:text="15:00 Uhr"
+                app:buttonTint="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/Uhr19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.12"
+                android:checked="false"
+                android:text="19:00 Uhr"
+                app:buttonTint="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/notification"
+                android:layout_width="263dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.11"
+                android:background="?attr/colorControlHighlight"
+                android:text="Benachrichtigung"
+                android:textAlignment="viewStart"
+                android:textColorLink="@color/colorPrimaryDark"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+
+    <Button
+        android:id="@+id/verbrauch"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/h_utiger_verbrauch"
+        android:textSize="18sp"
+        android:theme="@android:style/Theme.Holo" />
+
+    <Button
+        android:id="@+id/week"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/wochenansicht"
+        android:textSize="18sp"
+        android:theme="@android:style/Theme.Holo" />
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="@string/einstellungen"
+        android:theme="@android:style/Theme.Holo" />
+
+    <Button
+        android:id="@+id/info"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/information"
+        android:textSize="18sp"
+        android:theme="@android:style/Theme.Holo"
+        />
+
+    <Button
+        android:id="@+id/waterstation"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/wasserstation"
+        android:textSize="18sp"
+        android:theme="@android:style/Theme.Holo"
+        />
+
+
+</LinearLayout>
